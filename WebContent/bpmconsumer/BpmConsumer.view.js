@@ -577,7 +577,7 @@ sap.ui.jsview("bpmconsumer.BpmConsumer", {
 		oMatrix.createRow(oMatCell4,oMatCell44);
 		oMatrix.createRow(oMatCell5);
 		oPanel.addContent(oMatrix);
-		oController.initTodoModel();
+//		oController.initTodoModel();
 		oPanel.placeAt('content');
 	}
 
