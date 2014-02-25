@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+	.sapUiLbl {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	color: #444444;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100px;
+	}
+	.sapUiCb {
+	line-height: 20px;
+	height: 21px;
+	padding-top: 1px;
+	position: relative;
+	padding-left: 10px;
+}
