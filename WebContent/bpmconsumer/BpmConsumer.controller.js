@@ -38,12 +38,12 @@ sap.ui.controller("bpmconsumer.BpmConsumer", {
 		var oDataModel = getOdataModel();
 		console.log(oDataModel);
 		var outputData = {};
-
-		outputData = sap.ui.getCore().getModel().getProperty('/CherryWork');
+		outputData.CherryWork = sap.ui.getCore().getModel().getProperty('/CherryWork');
 		console.log(outputData);
-		console.log(sap.ui.getCore().getModel().getProperty('/CherryWork'));
-
-		oDataModel.create("/CherryWork", false, outputData, null, function() {
+		
+		claimTask();
+		
+		oDataModel.create("/OutputData", outputData, null, function() {
 			alert("Create successful");
 		}, function() {
 			alert("Create failed");
