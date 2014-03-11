@@ -38,7 +38,7 @@ getServiceUrl = function(sServiceUrl) {
 	 * statement below
 	 */
 	if (window.location.hostname == "localhost") {
-		return "http://ceserver.cherrywork.in" + sServiceUrl;
+		return "http://ceserver.cherrywork.in:50000" + sServiceUrl;
 	} else {
 		return sServiceUrl;
 	}

@@ -24,7 +24,7 @@ sap.ui.jsview("bpmconsumer.BpmConsumer", {
 			scrollTop : 0, // int
 			applyContentPadding : true, // boolean
 			collapsed : false, // boolean
-			areaDesign : sap.ui.commons.enums.AreaDesign.Fill, // sap.ui.commons.enums.AreaDesign
+			areaDesign : sap.ui.commons.enums.AreaDesign.Transparent, // sap.ui.commons.enums.AreaDesign
 			borderDesign : sap.ui.commons.enums.BorderDesign.Box, // sap.ui.commons.enums.BorderDesign
 			showCollapseIcon : true, // boolean
 			text : undefined, // string
@@ -33,7 +33,7 @@ sap.ui.jsview("bpmconsumer.BpmConsumer", {
 			title : new sap.ui.core.Title({
 				id : "id2", // sap.ui.core.ID
 				text : 'Cherrry Work', // string
-//				icon : 'images/logo.png', // sap.ui.core.URI
+				icon : 'images/spoon-cherry.png', // sap.ui.core.URI
 				level : sap.ui.core.TitleLevel.Auto, // sap.ui.core.TitleLevel
 				emphasized : false, // boolean
 				tooltip : undefined // sap.ui.core.TooltipBase
@@ -577,7 +577,6 @@ sap.ui.jsview("bpmconsumer.BpmConsumer", {
 		oMatrix.createRow(oMatCell4,oMatCell44);
 		oMatrix.createRow(oMatCell5);
 		oPanel.addContent(oMatrix);
-//		oController.initTodoModel();
 		oPanel.placeAt('content');
 	}
 
