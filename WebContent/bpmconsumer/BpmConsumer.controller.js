@@ -45,6 +45,7 @@ sap.ui.controller("bpmconsumer.BpmConsumer", {
 		
 		oDataModel.create("/OutputData", outputData, null, function() {
 			alert("Create successful");
+			window.location.reload(true);
 		}, function() {
 			alert("Create failed");
 		});

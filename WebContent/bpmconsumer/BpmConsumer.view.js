@@ -16,7 +16,7 @@ sap.ui.jsview("bpmconsumer.BpmConsumer", {
 		
 		var oPanel = new sap.ui.commons.Panel({
 			id : "invPanel", // sap.ui.core.ID
-			width : "100%", // sap.ui.core.CSSSize
+			width : "60%", // sap.ui.core.CSSSize
 			height : undefined, // sap.ui.core.CSSSize
 			enabled : true, // boolean
 			visible : true, // boolean
@@ -42,7 +42,7 @@ sap.ui.jsview("bpmconsumer.BpmConsumer", {
 			}) // sap.ui.core.Title
 		});
 		  
-		
+		oPanel.setLayoutData();
 		var oMatrix = sap.ui.commons.layout.MatrixLayout('deliveryInvMat',{width:'800px',columns:4});
 		oMatrix.setWidths('25%','25%','25%','25%');
 		var oAddAttachmentCB = new sap.ui.commons.CheckBox({
