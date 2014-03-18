@@ -15,7 +15,8 @@ sap.ui.controller("bpmconsumer.BpmConsumer", {
 		//		-------------------------------------------------------------------------
 		//		Reading the oDataModel
 		oDataModel.read("/InputData('" + taskId + "')", null, {
-			"$expand" : 'CherryWork'
+			//TODO need to change to context root
+			"$expand" : '<Path>'
 		}, false,
 
 		function(oData, oResponse) {
