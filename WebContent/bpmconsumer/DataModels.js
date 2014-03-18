@@ -1,4 +1,3 @@
-
 getOdataModel = function() {
 	var oDataModel = new sap.ui.model.odata.ODataModel(
 			getServiceUrl("/bpmodata/taskdata.svc/"
@@ -38,7 +37,8 @@ getServiceUrl = function(sServiceUrl) {
 	 * statement below
 	 */
 	if (window.location.hostname == "localhost") {
-		return "http://ceserver.cherrywork.in:50000" + sServiceUrl;
+		//TODO Change the path to point actual server
+		return "<path>" + sServiceUrl;
 	} else {
 		return sServiceUrl;
 	}
